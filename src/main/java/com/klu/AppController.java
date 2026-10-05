@@ -21,6 +21,11 @@ public class AppController {
 		
 		return "Addition of two numbers are:"+ (a+b);
 	}
+	@GetMapping("/mul/{a}/{b}")
+	public String sub(@PathVariable("a") int a, @PathVariable("b") int b) {
+		
+		return "Multiplication of two numbers are:"+ (a*b);
+	}
 
 
 }
